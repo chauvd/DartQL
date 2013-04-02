@@ -17,6 +17,9 @@
 		BF143036170B31FD008AE1A4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BF143035170B31FD008AE1A4 /* main.c */; };
 		BF14303E170B33D6008AE1A4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF14303D170B33D6008AE1A4 /* AppKit.framework */; };
 		BF143040170B3675008AE1A4 /* DartQL.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF143020170B31FC008AE1A4 /* DartQL.qlgenerator */; };
+		BFE12DCF170B3CEA00C22EBB /* preview.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFE12DCD170B3CEA00C22EBB /* preview.jpg */; };
+		BFE12DD0170B3CEA00C22EBB /* thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFE12DCE170B3CEA00C22EBB /* thumbnail.jpg */; };
+		BFE12DD2170B42EE00C22EBB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BFE12DD1170B42EE00C22EBB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +48,9 @@
 		BF143035170B31FD008AE1A4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		BF143037170B31FD008AE1A4 /* DartQL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DartQL-Prefix.pch"; sourceTree = "<group>"; };
 		BF14303D170B33D6008AE1A4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BFE12DCD170B3CEA00C22EBB /* preview.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview.jpg; sourceTree = "<group>"; };
+		BFE12DCE170B3CEA00C22EBB /* thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thumbnail.jpg; sourceTree = "<group>"; };
+		BFE12DD1170B42EE00C22EBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 		BF14302C170B31FC008AE1A4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BFE12DD1170B42EE00C22EBB /* README.md */,
+				BFE12DCD170B3CEA00C22EBB /* preview.jpg */,
+				BFE12DCE170B3CEA00C22EBB /* thumbnail.jpg */,
 				BF14302D170B31FC008AE1A4 /* DartQL-Info.plist */,
 				BF14302E170B31FC008AE1A4 /* InfoPlist.strings */,
 				BF143037170B31FD008AE1A4 /* DartQL-Prefix.pch */,
@@ -178,6 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF143030170B31FC008AE1A4 /* InfoPlist.strings in Resources */,
+				BFE12DCF170B3CEA00C22EBB /* preview.jpg in Resources */,
+				BFE12DD0170B3CEA00C22EBB /* thumbnail.jpg in Resources */,
+				BFE12DD2170B42EE00C22EBB /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +334,7 @@
 				BF14303C170B31FD008AE1A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
