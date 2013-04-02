@@ -7,11 +7,17 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeName</key>
+			<string>dart</string>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>dart</string>
+			</array>
 			<key>CFBundleTypeRole</key>
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>SUPPORTED_UTI_TYPE</string>
+				<string>com.apple.disk-image-dart</string>
 			</array>
 		</dict>
 	</array>
@@ -59,5 +65,23 @@
 	<false/>
 	<key>QLThumbnailMinimumSize</key>
 	<real>17</real>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Dart Disk Image</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.disk-image-dart</string>
+			</array>
+			<key>UTTypeIdentifier</key>
+			<string>dart</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.file-extension</key>
+				<string>dart</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

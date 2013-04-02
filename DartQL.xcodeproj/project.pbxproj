@@ -12,10 +12,25 @@
 		BF143028170B31FC008AE1A4 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF143027170B31FC008AE1A4 /* CoreServices.framework */; };
 		BF14302A170B31FC008AE1A4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF143029170B31FC008AE1A4 /* CoreFoundation.framework */; };
 		BF143030170B31FC008AE1A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF14302E170B31FC008AE1A4 /* InfoPlist.strings */; };
-		BF143032170B31FD008AE1A4 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = BF143031170B31FD008AE1A4 /* GenerateThumbnailForURL.c */; };
-		BF143034170B31FD008AE1A4 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = BF143033170B31FD008AE1A4 /* GeneratePreviewForURL.c */; };
+		BF143032170B31FD008AE1A4 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = BF143031170B31FD008AE1A4 /* GenerateThumbnailForURL.m */; };
+		BF143034170B31FD008AE1A4 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = BF143033170B31FD008AE1A4 /* GeneratePreviewForURL.m */; };
 		BF143036170B31FD008AE1A4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BF143035170B31FD008AE1A4 /* main.c */; };
+		BF14303E170B33D6008AE1A4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF14303D170B33D6008AE1A4 /* AppKit.framework */; };
+		BF143040170B3675008AE1A4 /* DartQL.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF143020170B31FC008AE1A4 /* DartQL.qlgenerator */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF14303F170B365F008AE1A4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/QuickLook";
+			dstSubfolderSpec = 0;
+			files = (
+				BF143040170B3675008AE1A4 /* DartQL.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BF143020170B31FC008AE1A4 /* DartQL.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartQL.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +40,11 @@
 		BF143029170B31FC008AE1A4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		BF14302D170B31FC008AE1A4 /* DartQL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DartQL-Info.plist"; sourceTree = "<group>"; };
 		BF14302F170B31FC008AE1A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BF143031170B31FD008AE1A4 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		BF143033170B31FD008AE1A4 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		BF143031170B31FD008AE1A4 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		BF143033170B31FD008AE1A4 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		BF143035170B31FD008AE1A4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		BF143037170B31FD008AE1A4 /* DartQL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DartQL-Prefix.pch"; sourceTree = "<group>"; };
+		BF14303D170B33D6008AE1A4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF14303E170B33D6008AE1A4 /* AppKit.framework in Frameworks */,
 				BF143024170B31FC008AE1A4 /* QuickLook.framework in Frameworks */,
 				BF143026170B31FC008AE1A4 /* ApplicationServices.framework in Frameworks */,
 				BF143028170B31FC008AE1A4 /* CoreServices.framework in Frameworks */,
@@ -66,6 +83,7 @@
 		BF143022170B31FC008AE1A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF14303D170B33D6008AE1A4 /* AppKit.framework */,
 				BF143023170B31FC008AE1A4 /* QuickLook.framework */,
 				BF143025170B31FC008AE1A4 /* ApplicationServices.framework */,
 				BF143027170B31FC008AE1A4 /* CoreServices.framework */,
@@ -77,8 +95,8 @@
 		BF14302B170B31FC008AE1A4 /* DartQL */ = {
 			isa = PBXGroup;
 			children = (
-				BF143031170B31FD008AE1A4 /* GenerateThumbnailForURL.c */,
-				BF143033170B31FD008AE1A4 /* GeneratePreviewForURL.c */,
+				BF143031170B31FD008AE1A4 /* GenerateThumbnailForURL.m */,
+				BF143033170B31FD008AE1A4 /* GeneratePreviewForURL.m */,
 				BF143035170B31FD008AE1A4 /* main.c */,
 				BF14302C170B31FC008AE1A4 /* Supporting Files */,
 			);
@@ -117,6 +135,7 @@
 				BF14301C170B31FC008AE1A4 /* Headers */,
 				BF14301D170B31FC008AE1A4 /* Resources */,
 				BF14301E170B31FC008AE1A4 /* Rez */,
+				BF14303F170B365F008AE1A4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -179,8 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF143032170B31FD008AE1A4 /* GenerateThumbnailForURL.c in Sources */,
-				BF143034170B31FD008AE1A4 /* GeneratePreviewForURL.c in Sources */,
+				BF143032170B31FD008AE1A4 /* GenerateThumbnailForURL.m in Sources */,
+				BF143034170B31FD008AE1A4 /* GeneratePreviewForURL.m in Sources */,
 				BF143036170B31FD008AE1A4 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
